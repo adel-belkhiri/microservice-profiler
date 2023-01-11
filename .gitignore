@@ -1,0 +1,50 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Configure / Makefile
+Makefile
+.libs/
+.deps/
+*~
+Makefile.in
+configure
+aclocal.m4
+autom4te.cache/
+/compile
+/config.*
+/config.h
+/config.h.in
+config/
+stamp-h1
+libtool
+ltmain.sh
+missing
+depcomp
+install-sh
+liblttng-profile/.dirstamp

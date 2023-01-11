@@ -1,0 +1,35 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+        {
+            "name": "Flow Classify (gdb)",
+            "miDebuggerPath": "/usr/bin/gdb-root",
+            "MIMode": "gdb",
+            "type": "cppdbg",
+			"sudo": true,
+            "request": "launch",
+            "program": "/home/adel/git/opentelemetry-cpp/build/examples/jaeger/example_jaeger",
+            "args": [
+            ],
+            "stopAtEntry": false,
+            "cwd": "/home/adel/git/opentelemetry-cpp/build/examples/jaeger",
+            "environment": [
+				{
+					"name": "LD_PRELOAD",
+					"value": "/home/adel/git/microservice-profiler/microservice-profile/.libs/libmicroservice-profile.so"}
+			],
+            "externalConsole": false,
+            "logging": { "engineLogging": true, "trace": true, "traceResponse": true },
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": false
+                }
+            ]
+        }
+	]
+}
